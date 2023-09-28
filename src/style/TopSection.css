@@ -1,0 +1,210 @@
+/* .topSection{
+ background-image: url("https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp");
+ background-repeat: no-repeat;
+ transform: scaleX(-1);
+} */
+
+.topSection::before {
+  content: "";
+  background-image: url("https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp");
+  /* background-repeat: no-repeat; */
+  transform: scaleX(-1); /* Flip the background image horizontally */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.sub1 {
+  display: flex;
+}
+
+.img2 {
+  margin-left: 150px;
+  margin-top: 80px;
+}
+
+.img3 {
+  margin-left: 22%;
+  margin-top: 5%;
+  height: 210px;
+  animation: float-y 10s ease infinite;
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translateY(-20px); /* Move the image up */
+  }
+}
+
+.middle {
+  border: 1px solid white;
+  margin-top: 27%;
+  margin-left: -22%;
+  display: flex;
+  gap: 20px;
+  width: 500px;
+  height: 90px;
+  padding-left: 10px;
+  border-radius: 50px;
+}
+
+.middle p {
+  color: white;
+}
+
+.middle img {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.middle1 {
+  width: 800px;
+  height: 90px;
+  padding-left: 10px;
+}
+
+.middle1 p {
+  color: white;
+  margin-left: -100px;
+}
+
+.middle1 .h1one {
+  font-size: 70px;
+  font-weight: bolder;
+  margin-top: 30px;
+  /* border: 1px solid white; */
+}
+
+.middle1 .h1two {
+  font-size: 30px;
+  color: gray;
+  margin-top: -50px;
+}
+
+.two .one {
+  font-size: 20px;
+}
+
+.two .one1 {
+  font-size: 16px;
+  margin-top: -12px;
+}
+
+.symbol {
+  display: flex;
+}
+
+.symbol1 {
+  display: flex;
+  margin-left: 149px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.symbol2 input {
+  width: 270px;
+  height: 50px;
+  margin-left: 80px;
+  margin-top: 35px;
+  border-radius: 7px;
+  font-size: 18px;
+}
+
+.symbol2 button {
+  width: 200px;
+  height: 56px;
+  margin-top: 38px;
+  border-radius: 7px;
+  margin-left: -3px;
+  background-color: #7040c8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sub2 .line {
+  width: 4px;
+  height: 350px;
+  margin-left: 160px;
+  border: 0px solid white;
+  background: linear-gradient(
+    #d2a8ff,
+    #a371f7 10%,
+    #196c2e 70%,
+    #2ea043 80%,
+    #56d364
+  );
+}
+
+.symbol2div {
+  width: 0px;
+  height: 50px;
+  border: 1px solid gray;
+  margin-left: 570px;
+  margin-top: -55px;
+}
+
+.symbol3div {
+  width: 300px;
+  height: 50px;
+  margin-left: 80px;
+  margin-top: 35px;
+  border-radius: 7px;
+  font-size: 18px;
+  border: 1px solid #7040c8;
+  margin-left: 600px;
+  margin-top: -53px;
+}
+
+.symbol3div p {
+  color: white;
+  margin-top: 12px;
+  margin-left: 40px;
+}
+
+.sub2 {
+  display: flex;
+}
+
+.sub2 p {
+  color: gray;
+  margin-left: 100px;
+  margin-top: 133px;
+  font-size: 20px;
+}
+
+.lineimg {
+  display: flex;
+  margin-left: -410px;
+  margin-top: 200px;
+  gap: 60px;
+}
+
+.lineimg img{
+  width: 130px;
+  height: 70px;
+}
+
+.symbol1p{
+  font-size: 25px;
+  margin-left: 75px;
+}
+
+/* linear-gradient(#56d364, #2ea043, var(--color-canvas-default)) */
+
+.sub3 .line {
+  width: 4px;
+  height: 350px;
+  margin-left: 160px;
+  border: 0px solid white;
+  background-image: linear-gradient(#56d364, #2ea043);
+}
